@@ -1,0 +1,363 @@
+v2.0.10
+-------
+- Fix EPL patch incorrect target
+
+v2.0.9
+------
+- Fixed for emissive endcap texture not being included in distribution
+
+v2.0.8
+------
+- Fixed cupola collider fix
+
+v2.0.7
+------
+- Fixed description string for 1.875m attach tube
+- Fixed string for non-specific Kerbin Landed telescope experiment
+- Fixed tech location for 5m greenhouse without tech trees installed
+- Fixed tech entry cost for 2.5m inflatable habs
+- Fixed some seams on some parts
+
+v2.0.6
+------
+- Fixed functioning of 5m lab's airlock
+- Fixed missing backside of 1.25m docking port replacement
+- Fixed skinning error on Doughnut centrifuge
+- Added Stress support to the Snacks patch 
+- Added SSPXR-TAC-ScienceDisableFix.cfg that disables TAC patches on the science labs to resolve TAC bug
+
+v2.0.5
+------
+- Fixed usage mask of observatory experiment so it requires a kerbal in the vessel, not in the part
+- More improvements to bad triangulation/smoothing on the observation module
+
+v2.0.4
+------
+- Fixed extra top node on greenhouse/telescope cupolas
+- Fixed offest endcap on greenhouse/telescope cupolas
+- Fixed integrated ladder switches on 3.75m lab and tall adapter
+- Fixed some harmless loading exceptions on 3.75m attach point
+- Fixed missing CTT assignment for 5m centrifuge
+- Updated USI-LS patch (danfarsey)
+- UPdated TAC-LS patch (JadeofMaar) 
+- Tweaked smoothing on observation module
+- Updates to Chinese localization
+- Telescope experiement is now transmittable and resettable in a fashion similar to other data experiments
+
+v2.0.3
+------
+- Added science defs for telescope experiment, previously they used the Visual Observation experiment (thanks GregoxMun!)
+- Fixed tiny seam on 1.875m medium crew tube
+- Removed Restock light module on docking port replacement
+- Increased rotation rate of base leg foots
+- Corrected some base leg foot orientations
+- Adjusted contract generation: domes may now be requested for surface bases but typically not stations
+- Added new parts to KeepFit patch
+- Added new parts to Snacks! patch
+
+v2.0.2
+------
+- Fixed 1.875 attachement module seam
+- Fixed missing surface switch for 1.25m adapter
+- Fixed 2.5m cupola/science lab emissive texture
+- Fixed direction of all dome attach nodes
+- Fixed missing insulated variant for 1.25m hub
+
+v2.0.1
+------
+- Fixed metal variant hatch of 1.875m utility module
+- Fixed missing description on 5m adapters
+- Fixed localization of 1.25m docking port white variant
+- Fixed swapped attach node locations for dome connection nodes
+- Moved Domus dome to Utility tab
+- Fixed mesh gaps on Panoptes and Evening modules
+
+v2.0.0
+------
+- KSP 1.12
+- Updated ModuleManger to 4.2.1
+- Updated NearFutureProps to 0.7.1
+- Updated B9PartSwitch to 2.18.0
+- Deprecated StationPartsExpansionMetal Extra. Don't use it anymore, uninstall it if you have it
+- Added StationPartsExpansionIVAs Extra. This now contains the IVAs. By default, all IVAs now use the 'blank' internal space
+- New 1.875m part set
+ - Middle ground between 1.25m and 2.5m
+ - White, Insulated, Metal surface variants
+ - Full set of endcap variants (White, Metal, Black, Insulated in both handles/bare versions)
+ - PMA-T1 Pressurized Crew Tube: basic crew tube
+ - PMA-T2 Pressurized Crew Tube: basic medium crew tube
+ - PMA-T3 Pressurized Crew Tube: basic short crew tube
+ - PMA-1A Angled Pressurized Crew Tube: angle crew tube with 30, 45 and 90 degree variants
+ - PMA-AR Radial Attachemnt Module: basic attach module
+ - PMA-MULT Multi-Point Station Connector: multi-hub with 6-way, 5-way, 4-way, planar 4-way, 3-way, elbow variants
+ - PMA-C 'Panoptes' Observation Module: cupola with 1 crew member capacity
+ - PMA-2 'Quay' Station Core: station core with 3 crew member capacity
+ - PMA-3 'Spectra' Utility Module: multipurpose utility module with 2 crew member capacity
+ - PMA-5A 'Dawn' Habitation Module: large crew module with 5 crew member capacity
+ - PMA-5B 'Evening' Habitation Module: small crew module with 3 crew member capacity
+ - PMA-4 'Nature' Science Module: science module with 2 crew member capacity
+ - BR-1B Adjustable Base Cradle: 1.875m leveling ground base cradle
+ - BZ-1B Adjustable Base Frame: 1.875m leveling ground base frame
+- New limited 5m part set
+ - Only comes in White, with minimal endcap variants (white, black, handles/bare handles)
+ - SDV-2 'Atlas' Deep Space Habitation Module: really large crew module. 14 Kerbal capacity
+ - SDV-2B 'Titan' Compact Deep Space Habitation Module: really large crew module but flat. 6 Kerbals.
+ - SDV-3 'Minerva' Deep Space Control Module: Large station control module, with a number of interesting features. 5 Kerbal capacity
+ - SDV-1 'Leto' Deep Space Logistics Module: Big cargo module
+ - SDV-1X 'Atriedes' Deep Space Logistics Module: Big cargo module, half size
+ - SDV-4 'Demeter' Cultivation Module: very large greenhouse/aquaculture facility with 4 kerbal capacity
+ - SDV-6 'Delphi' Science Module: Large science module with intergrated exposed facility and telescope
+ - SDV-G1 'Tholos' Geodesic Dome: Basic geodesic dome with nothing in it. Toggleable colliders for customization
+ - SDV-G2 'Villa' Cultivation Dome: Dome with greenhouse functions and 2 kerbal capacity. 
+ - SDV-G3 'Domus' Habitation Dome: Dome with habitation functions and 6 kerbal capacity. 
+ - SDV-G4 'Astrolabe' Observation Dome: Dome with cupola functions and 2 kerbal capacity
+ - SDV-X 'Cronus' Extensible Centrifuge: Immense centrifuge with 16 kerbal capacity and integrated lab facility
+ - SDV-4 Adapter: basic adapter
+ - SDV-6 Flat Adapter: flat adapter
+ - BR-4 Adjustable Base Cradle: 5m leveling ground base cradle
+ - BZ-4 Adjustable Base Frame: 5m leveling ground base frame
+- New non-specific size parts:
+ - SD-1x1 Structural Panel: radial white truss panel similar to the Delphi external facility panels
+ - SD-2x2 Structural Panel:  radial white truss panel similar to the Delphi external facility panels, but a bigger version
+ - PAS-T 'Oculus' Remote Telescope: Small radially attachable telescope dome
+ - PAS-G 'G4RD3N' Hydroponics Cupola: Small radially attachable cupola dome with plants inside it
+ - B-ST41R Extensible Stairway: Small staircase with adjustable lengths
+- 1.25m part updates
+ - Added White, Metal surface variants
+ - Repainted old surface variant into insulated thermal blanket variant matching new 1.875m parts
+- 2.5m part updates
+ - Added White, Metal surface variants
+ - Repainted old surface variant into insulated thermal blanket variant matching new 1.875m parts
+- General fixes and updates
+ - Adjusted mass, cost and entry cost of base frame cradles which used to be completely nonsensical
+ - Reworked 1.25 and 2.5m endcaps completely to match new work on 1.875m endcaps
+ - Renamed PTD/PFD (1.25m) part series to PAS/PAF to help with default VAB sorting
+ - Replacement 1.25 port, extending 1.25m port, extending 2.5m port upgraded with rotation functions from KSP 1.12
+- Compatibility
+ - Added USI Recycle bin to containers when USI Tools is installed
+
+
+v1.4.0
+------
+- KSP 1.11
+- Updated NearFutureProps to 0.6.4
+- Added inventories and cargo stuff
+
+
+v1.3.6
+------
+- KSP 1.10.x
+- Updated ModuleManager to 4.1.4
+- Updated B9PartSwitch to 2.17.0
+- Updated NearFutureProps to 0.6.3
+- Improvements to Snacks compatibility from Wyzard256
+- Added a scaling factor to auto-leveling base frames which reduces their extension speed in proportion with the Celestial Body's gravity
+
+v1.3.5
+------
+- Fixed an issue where EPL being installed without CRP would cause the game to complain
+- Adjusted some manufacturer names. 
+
+v1.3.4
+------
+- Updated B9PartSwitch to 2.16.0
+- Fuel tanks in the Asylum radiation shelter can now switch between various liquid options (LouisB)
+- Increased 1.25m cupola mass to 0.45
+- Improvements to SSPXMetal extras
+ - New B9PS material switcher allows better fidelity on metallic textures
+ - Fixed a few small bugs
+
+v1.3.3
+------
+- KSP 1.9
+- Updated B9PartSwitch to 2.13.0
+- Updated NearFutureProps to 0.6.2
+- Added Chinese translation (tinygrox)
+- Fixed Kerbal positioning issues with the Bagel and Blimp IVAs. 
+
+v1.3.2
+------
+- Fixed problematic 1.3.1 versioning
+- Updated ModuleManager to 4.1.3
+- Fixed a Breaking-Ground related issue which could cause autostruts to break under certain conditions (lolsquad)
+- Updated Russian translation (Zool3)
+
+v1.3.0
+------
+- KSP 1.8
+- Updated B9PartSwitch to 2.12.1
+- Updated ModuleManager to 4.1.0
+- Updated NearFutureProps to 0.6.1
+- Recompiled plugin to target .NET 4.5
+- Took advantage of new B9PS features (UI, type descriptions) for most mesh switch options
+- Fixed Telescopic Clamp-O-Tron initial rotation being incorrect
+- Fixed missing brace in Coriolis config which broken centrifuge options
+- General UV tweaks and fixes to a lot of parts
+- Added new features to auto levelling bases
+  - Some bugs with Auto-Level have been corected
+  - ModuleAdjustableLeg can now have FeetPointOutwards specified which constrains the feet to point out of the base
+  - ModuleLevelingBase
+    - Has new Toggle, Deploy, Retract action groups
+      - Toggle is automatically bound to Gear action group
+      - Deploy automatically extends the legs and auto-levels
+      - Retract resets all legs to zero
+      - UI fields for Deploy, Retract can be enabled/disabled with ShowDeployRetract field in the config
+    - Auto-Level can now be bound to an action group
+    - Can now have MinimumAutoLevelFraction specified, which sets the miniumum extension when the autolevel button is pressed
+    - Can now have CanTweakAutoLevel specified, which lets minimum extension be modifiable when Adv Tweakables is on
+- New Extras package: StationPartsExpansionMetal
+  - Adds a new bare metal variant surface to most parts
+  - Flexible sections of inflatable modules remain the same
+  - Insulated cargo modules remain the same
+  - Adds two new metal-oriented endcap options (Bare and Handles (yellow))
+
+v1.2.2
+------
+- Fixed a bug that caused station contracts to accept the 3.75m cupola rather than the 3.75m science lab as fulfilling a Science Lab requirement (hanks HSJasperism)
+
+v1.2.1
+------
+- Updated B9PartSwitch to 2.7.1
+- Fixed a harmless B9PartSwitch warning that bothered people
+- Updates to Russian localization (Sool3)
+- Updates to localized strings in general (Sool3)
+
+﻿v1.2.0
+-------
+- KSP 1.7.x
+- Updated ModuleManager to 4.0.2
+- Updated NearFutureProps to 0.5.1
+- Update to Snacks compatibility (LouisCyfer)
+- Change to EPL productivity of habitats (thanks Starstrider42)
+- Updates to USI compatibility (thanks Dan-Shields and Boamere)
+- Removed accidentally included spin resources on small 1.25m centrifuge
+- Fixed collider inconsistency on 1.25m Utility module
+- Propagated new-style foil endcaps from Restock to all 2.5m parts
+- Propagated new-style hatches and airlocks from Restock to parts where appropriate
+- Propagated improvements to replacement docking port from Restock to replacement docking port (note, Metal/Insulated variants are still here!)
+- Propagated improvements to replacement Hitchhiker, Lab and Cupola from Restock (note, endcap variants are still here!)
+- Recompressed all external textures using higher quality compressor
+
+v1.1.0
+-------
+- KSP 1.6.x
+- Updated ModuleManager to 3.1.3
+- Updated B9PartSwitch to 2.6.0
+- Updated NearFutureProps to 0.5.0
+- Minor change to licensing of code/configs (MIT now)
+
+v1.0.11
+-------
+- Updated B9PS to 2.5.0
+- Fixed an issue with the 2.5m extendo tube that caused it not to dock
+- Reduced mass of 2.5 m cargo bays to 0.6 and 1.2 t from 1.5 and 3t
+
+v1.0.10
+-------
+- Fixed build issue
+
+v1.0.9
+------
+- KSP 1.5
+- Updated NFProps to 0.3.5
+- Updated MM to 3.1.0
+- Updated B9PS to 2.4.5
+- Removed MiniAVC distribution, version file remains
+- Contract improvements:
+-- Observation modules, 1.25m/3.75m cupolas will now fulfill cupola contracts
+-- Large lab will now fulfill lab contracts
+-- Station/Base contracts that require a greenhouse will now generate
+-- Station/Base contracts that require an aquaponics module will now generate
+-- Station/Base contracts that require a hab module will now generate
+-- Station contracts that require a centrifuge will now generate
+- Increased base science for visual observation experiment, all science should now be sent with one transmission
+- Fixed compatibility of revised stock docking port with IndicatorLights
+- Added missing vesselType to vessels that didn't have it
+-- Fixes experience gain
+-- Fixes issues where if there is no VesselType specifying crewed module on the vessel, science experiments will fail
+- Fixed flag for lab replacement
+- Changed rotation of replacement docking port and extensible docking port to be consistent with the original part
+- Small fix to deployable module resource costs: will now round resources, so you are less likely to get issues where you have 1999.999993 resources when you think you have the 2000 needed to deploy
+- Added optional SpinResource and SpinResourceRate to ModuleDeployableCentrifuge - allows specification of a resource and a rate needed to rotate the thing
+
+v1.0.8
+------
+- Hotfix small cupola command
+
+v1.0.7
+------
+- Fixed .version file
+- Fixed an issue that caused inflatable parts to lose their crew transfer dialogs
+- Revised which parts are allowed to level up kerbals
+- Disabled re-rendering of drag cubes when the part variant is changed for expandable parts
+- Added science storage to most parts; allows kerbals to keep experience properly
+- Moved small cupola to Command category
+- Added Spanish translation (SergiRuizZarzuelo)
+- Updated NF Props to 0.3.3
+-- Minor fix to an RPM screen
+
+v1.0.6
+------
+- Removed KerbalHealth patch, it's now in KerbalHealth (> 3.0)
+- Centrifuges and habitats now adjust their drag cubes when deploying and retracting
+- Replacement patch for docking port now handles VSR correctly
+- Fixed misconfigured collider on 2.5m airlock/docking port
+
+v1.0.5
+------
+- KSP 1.4.5
+- Updated ModuleManger to 3.0.7
+- Updated B9PartSwitch to 2.3.3
+- Added Italian localization (Carlo Rossi (CRL42))
+- Widened versioning to allow anything up to 1.4.9999
+- Fixed a mesh hole on 2.5m centrifuge
+- Fixed issue with short huge container collider
+- Added control nodes to extensible tubes so they control-from-here the right way
+- Moved PPD-MULT﻿ to Meta-Materials node
+
+v1.0.4
+------
+- Fixed missing docking transform on new docking port
+
+v1.0.3
+------
+- KSP 1.4.2
+- Updated ModuleManger to 3.0.6
+- Updated B9PartSwitch to 2.2.1
+- Updated MiniAVC to 1.2.0.1
+- Updated NFProps to 0.3.2
+- Added replacement model for Clamp-o-tron docking port
+-- 2 alternate versions available
+- Disabled drag cube recalculation for cargo containers (fixes inflight switching explosion)
+- Fixed KerbalHealth patch applying all the time
+- Fish study and plant growth experiments now no longer differentiate between biomes
+
+v1.0.2
+------
+- Fixed duplicate zipfile inside archive
+
+v1.0.1
+------
+- Updated ModuleManger to 3.0.4
+- Updated B9B9PartSwitch to 2.1.1
+- Fixed USI/EPL cargo container contents problem
+- Cargo container contents can now be switched in flight
+- Added a top attach node to the 3.75m cupola
+- Added part nicknames to tag lists (Kerbas-ad-astra)
+- Added KeepFit patch (Kerbas-ad-astra)
+- Improvements to many LS compatability patches (TAC, MKS)
+- Fix to CLS patch for 3.75m lab (Kerbas-ad-astra)
+- Fixed rotation of 2.5m airlock, observation module IVAs
+- Fixed a misaligned kerbal transform in the Mercury IVA
+- Removed a hanging techRequired block in the CLS patch
+- Increased base leg friction coefficients from 0.5 to 0.9
+- Porthole now has basic command module functions (control) but no reaction wheels
+- Fixed engineer requirement under localized versions
+- Fixed attach node coordinate reversal on 45 degree version of 1.25m multihub
+- Fixed endcap misalignment on 4-way Planar version of 2.5m multihub
+- Fixed inconsistent foil shader between variants of 2.5m multihub
+- Fixed export issues with alpha channels of a few parts
+
+v1.0.0
+------
+- Initial release
