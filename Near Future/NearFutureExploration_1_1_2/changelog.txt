@@ -1,0 +1,160 @@
+v1.1.2
+------
+- KSP 1.12
+- Updated bundled B9PartSwitch to 2.18.0
+
+v1.1.1
+------
+- Fixed cargo storeable parts in 1.10
+
+v1.1.0
+------
+- Marked compatible for KSP 1.11
+- Applied storeablity/EVA construction parameters to many parts
+
+v1.0.10
+-------
+- Fixed an issue where broken antennas would cause NREs
+
+v1.0.9
+------
+- Marked compatible for KSP 1.10+
+- Updated bundled B9PartSwitch to 2.17.0
+- Updated bundled MM to 4.1.4
+
+v1.0.8
+------
+- Fixed collider rotation for the HECS2 busses
+
+v1.0.7
+------
+- Updated bundled B9PartSwitch to 2.16.0
+- RemoteTech compatiblity! (thanks TaxiService!)
+- Chinese localization (tinygrox)
+- Fixed an issue with the tiny tiny tank that had negative mass when loaded with LH2
+
+v1.0.6
+------
+- Fixed backwards RT patch removing feed features when RT NOT installed vs installed
+
+v1.0.5
+------
+- Marked compatible for KSP 1.9+
+- Updated bundled B9PartSwitch to 2.13.0
+- Fixed an issue where the PLTO and PLTO Compact buses had components (colliders, endcaps) rotated by 150 degrees 
+- Disabled more things when RemoteTech or RealAntennas are installed. 
+
+v1.0.4
+------
+- Fixed an issue where antenna reflector range was multiplied by 100 in the VAB info
+- Reflector range extension is now done with SI prefixes (eg 5G, 10T, etc) instead of many zeroes
+- Reduced mass of nano landing legs to 5kg from 15 kg
+- Fixed the surface attach node of the RFL100 Giant Dish Reflector
+- Fixed the normal map on the RND probe core's silver variant
+- Fixed identical masses of all three phased arrays
+
+v1.0.3
+------
+- Fixed another localization issue with the VAB info display for ModuleDeployableReflector
+- Changed the way antenna feeds are patched
+- Fixed a localization error in the PLTO core description
+- Fixed a typo in the RFL-2000 description
+- Excluded all antenna patching when either RemoteTech or RealAntennas are installed
+- Some adjustments to more gracefully handle failing feed things
+- Antenna feed line 'good' color is now cyan
+- Antenna feed lines are now not turned on by default in the VAB
+- Rotated most probe cores by 180 degrees to match initial convention
+- Rotated PLTO cores and bus by -150 degrees, this will affect craft but obeys the above convention
+
+v1.0.2
+------
+- Fixed MLT-10 RCS fuel option containing LFO instead of monopropellant
+- FeedScale of most feeder antennas tuned: 75% efficiency -> 90%, 60% -> 75%
+- Pushed up the ranges for the smaller side reflectors by ~5-10%
+- Upped the range for phased array antennae by 10x
+- Tweaked tech locations for a number of the weaker antennae (on average, 1 tier lower)
+- Fixed a localization issue with the VAB info display for ModuleDeployableReflector
+- Fixed a localization error with the PLTO core description
+- Adjusted the shader settings of some probe cores to match with each other better
+- Fixed large CHFR bus' silver foil texture
+- Fixed a missing texture reference in some probe normal maps
+
+v1.0.1
+------
+- Reduced mass of Micro CMG to 0.01 from 0.05t
+- Fixed base range of both dedicated feeder antennae being far too high
+- Fixed a number of antennae and all reflectors having physics disabled
+- Fixed a piston animation issue on the RA-X1 relay antenna
+- Fixed an issue where reflector buffs would not be removed when a reflector was retracted.
+- Fixed some UI oddities with reflectors PAW fields
+- Fixed reflectors not augmenting antennae when unfocused.
+
+v1.0.0
+------
+- Initial release
+- Added 8 new probe cores
+ - Probodobodyne RND: 0.625m cylindrical probe core. Metal, Gold Foil, and Silver Foil variants.
+ - Probodobodyne DSK: 1.25m cylindrical probe core. Metal, Gold Foil, and Silver Foil variants.
+ - Probodobodyne CYL: 1.875m cylindrical probe core. Metal, Gold Foil, and Silver Foil variants.
+ - Probodobodyne REKT: medium square probe core. Metal, Gold Foil, and Silver Foil variants.
+ - Probodobodyne SQR: large square probe core. Metal, Gold Foil, and Silver Foil variants.
+ - Probodobodyne STP: medum octagonal probe core. Metal, Gold Foil, and Silver Foil variants.
+ - Probodobodyne CHFR: large octagonal probe core. Metal, Gold Foil, and Silver Foil variants.
+ - Probodobodyne PLTO: large tetrahedral probe core. Metal, Gold Foil, and Silver Foil variants.
+- Added probe buses - hollow structures
+ - ADPT-A: 0.625 to 1.25m cylindrical adapter bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - ADPT-B: 1.25m to 1.875m cylindrical adapter bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - OKTO: OKTO footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - QBE: QBE footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - HECS: HECS footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - HECS2 : HECS2 footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - RND: RND footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - DSK: DSK footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - CYL: CYL footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - REKT: REKT footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - SQR: SQR footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - STP: STP footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - CHFR: CHFR footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+ - PLTO: PLTO footprint bus. Metal, Gold Foil, Silver Foil and Skeletal surfaces.
+- Added probe-styled multipurpose fuel tanks
+ - MLT-R2 Multipurpose Fuel Tank: Tiny radial probe fuel tank: stores LFO, Mono, Xenon by default
+ - MLT-10 Multipurpose Fuel Tank Cluster: Tiny stack probe fuel tank: stores LFO, Mono, Xenon by default
+ - MLT-R10 Multipurpose Fuel Tank: Small short radial probe fuel tank: stores LFO, Mono, Xenon by default
+ - MLT-R20 Multipurpose Fuel Tank: Small medium radial probe fuel tank: stores LFO, Mono, Xenon by default
+ - MLT-R40 Multipurpose Fuel Tank: Small long radial probe fuel tank: stores LFO, Mono, Xenon by default
+ - MLT-240 Multipurpose Fuel Tank Cluster: 1.875m-ish short probe fuel tank: stores LFO, Mono, Xenon by default
+ - MLT-120 Multipurpose Fuel Tank Cluster: 1.875m-ish medium probe fuel tank: stores LFO, Mono, Xenon by default
+ - MLT-60 Multipurpose Fuel Tank Cluster: 1.875m-ish long probe fuel tank: stores LFO, Mono, Xenon by default
+- Added small satellite/lander parts
+ - Micro CMG: tiny reaction wheel
+ - LT-9 Nano Landing Leg: tiny landing leg
+ - Z-25 Rechargeable Battery: tiny battery
+- Added new direct antennae
+ - F-DA Relay Antenna Feed: Feeder antenna for reflectors
+ - DR-1 High Gain Antenna: Small, high speed antenna
+ - DR-3 Deployable High Gain Antenna: Small, high speed antenna
+ - D-2 Spot Antenna: Static high power antenna
+ - D-50 Spot Antenna: Static high power antenna with better range
+ - AX-4 Pointable Helical Antenna: Tiny rover antenna, low power, low range
+ - AX-5 Aerial Micro Antenna: Rover antenna, low power, medium range
+ - AX-30 High Gain Antenna: Rover antenna, low power, good range
+- Added new relay antennae
+ - F-RA Relay Antenna Feed: Feeder antenna for reflectors
+ - RA-00-2 Micro-Relay Antenna: Tiny relay for early in system comms
+ - RA-0-8 Relay Antenna: Large deployable relay
+ - RA-5B Advanced Relay Antenna: Larger deployable relay
+ - RA-X1 Phased Relay Antenna: Phased array antenna - high data rate, high power
+ - RA-X2 Phased Relay Antenna: Phased array antenna - high data rate, high power
+ - RA-X3 Phased Relay Antenna: Phased array antenna - high data rate, high power
+ - PH-1 Phased Array Antenna Element: build your own phased array - poor performance alone, but combines well
+ - PH-2 Phased Array Antenna Element: build your own phased array - poor performance alone, but combines well
+ - PH-3 Phased Array Antenna Element: build your own phased array - poor performance alone, but combines well
+- Added new reflector antenna type: Does nothing without another antenna to buff
+ - Buffs antennas pointed at the dish
+ - Most antennas can be buffed but some are better than others (Feeder types are best)
+ - RFL-1 Dish Reflector: Small dish reflector
+ - RFL-2 Medium Dish Reflector: large dish reflector
+ - RFL-3 Dish Reflector Array: cluster of dish reflectors
+ - RFL-50 Large Dish Reflector: large mesh reflector
+ - RFL-100 Giant Dish Reflector: really big dish reflector
+ - RFL-2000 Dish Reflector Array: oh boy oh boy big reflector

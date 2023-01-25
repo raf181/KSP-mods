@@ -1,0 +1,382 @@
+v1.3.2
+------
+- Marked for KSP 1.12
+- Updated B9PartSwitch to 2.18.0
+
+v1.3.1
+------
+- Fixed cargo parts for KSP 1.10
+
+v1.3.0
+------
+- KSP 1.11
+- Set many panels as useable in inventories in various ways
+
+v1.2.3
+------
+- Marked for KSP 1.1.0
+- Updated B9PartSwitch to 2.17.0
+- Updated ModuleManager to 4.1.4
+- Added Portugese localization (Rib3iroJr)
+
+v1.2.2
+------
+- Updated B9PartSwitch to 2.16.0
+- Updated Chinese translation (tinygrox)
+- Enumerated all panel objects on Hub panels, reducing warnings in the log
+
+v1.2.1
+------
+- Changed the attach node on the curved panels to behave better with surface attachemnt (sorry, this will affect craft)
+
+v1.2.0
+------
+- Marked compatible with KSP 1.9+
+- Updated bundled ModuleManager to 4.1.3
+- B9PartSwitch is now bundled and required
+- Switchable cell feature implemented
+-- All previous Advanced panels can now toggle between Basic, Advanced and Concentrator cells with different looks and performance. Advanced represents previous baseline, Concentrator increases power per unit area but weighs more, Basic decreases power per unit area, but weighs less. 
+-- All previous Blanket panels can now toggle between Basic Blanket, and Advanced Blanket cells with different looks and performance. Advanced represents previous baseline, Basic decreases power per unit area, but weighs less. 
+-- All previous Concentrator panels can now toggle between Basic, Advanced and Concentrator cells with different looks and performance. Concentrator represents previous baseline, Advanced decreases power per unit area but weighs less, Basic further decreases power per unit area, but weighs least. 
+- Some panel names were adjusted to be clearer
+- Fixed an issue where most or all normal maps in the mod had some problems
+- Fixed an issue with the Solo panel's suncatcher not extending with the rest of the model
+
+v1.1.0
+------
+- KSP 1.8.x
+- Plugin recompiled against .NET 4.5
+- Updated bundled ModuleManager to 4.1.0
+- REMOVED ALL DEPRECATED OLD SOLAR PANEL PARTS
+- Updated MM patches to have correct pass specifications when needed
+- Added new panel models
+  - K3x75-A 1x1 Advanced Photovoltaic Panels: Small Advanced 3.75 kW array based on MESSENGER panels. Not retractable
+  - K3-A 3x1 Advanced Photovoltaic Panels: Small Advanced 3 kW array based on Worldview-3 panels. Not retractable
+  - K4-AFR 1x2 Advanced Photovoltaic Panels: Small Advanced 4 kW array based on Worldview-4 panels. Does not track sun
+  - K10-AFR 3x1 Advanced Photovoltaic Panels: Small Advanced 10 kW array based on Hayabusa-2 panels. Does not track sun
+  - K0f7-AFR 1x1 Advanced Photovoltaic Panels: Small Advanced 0.7 kW array based on Ikonos-1 panels. Does not track sun
+
+v1.0.5
+------
+- Fixed an issue with the Halo panel colliders
+
+v1.0.4
+------
+- Fixed rogue lights on Megalador and Halo panels
+- Updated Chinese translations (6DYZBX)
+
+v1.0.3
+------
+- Fixed CTT location of small truss solar array
+- Moved truss solar arrays to Advanced Solar Tech node in CTT mode
+
+v1.0.2
+------
+- Some fixed manufacturers (Sool3)
+- Added Russian localization (Sool3)
+
+v1.0.1
+------
+- Fixed OKEB-15 and -45 being retractable
+- Fixed OKEB-150 not being retractable
+- Updated Spanish translation
+- Fixed power output of Ares panels
+
+v1.0.0
+------
+- KSP 1.7.x
+- Final content update
+- Updated ModuleManager to 4.0.2
+- Soft-deprecated all old solar panel parts: you have 2-3 months before they are removed PERMANENTLY (this was necessary due to extensive model changes)
+- New part configs and names introduced - easier to parse for me/end users
+- Complete artistic redo
+  - Division of Basic, Advanced, Blanket, Concentrator panels is now visually clear - Advanced panels have a different cell design from stock, Concentrators add a fresnel lens effect to each cell and Blanket includes the gold taped kapton look of the ISS solar arrays
+  - Use of reflective shader to improve visual fidelity
+  - Consistent texel density for all components
+  - Visual continuity with Restock project
+- Panel naming convention has been clarified:
+  - Non-blanket deployable panel nomenclature is now K{EC Output}-{Suffix}, where Suffix is composed of A (advanced), R (retractable) and/or K (concentrating) as appropriate
+  - Blanket nomenclature is OKEB-{EC Output} with an R suffix if retractable
+  - Circular nomenclature is NIV-{EC Output} with an R suffix if retractable
+  - Most larger panels got new nicknames
+  - Removed certain tags from un-retractable panels to remove them from searches
+- Manufacturer naming has been tweaked and consolidated into two manufacturers
+- Many descriptions were rewritten to account for changes
+- Several replaced/significantly modified models:
+  - K7-A/K7-AR 1x4 panels have been replaced with a modern Dragon 1 style
+  - K22-A, K15-A panels are now physically larger (previously they were too small for their power output)
+  - K55 Megalador has a completely different model with a different closed footprint
+  - OKEB-100 has a completely different model with a different closed and open footprint based off a Deep Space Gateway concept illustration
+  - OKEB-500 has a completely different model with a different closed and open footprint based off NASA DRM5 SEP-CHEM option
+  - OKEB-75-R has a completely different model with a different closed and open footprint, and is now fully shrouded.
+  - NIV-30 has been reworked to be visually similar to Dragon 2 wraparound panels
+  - NIV-18 has been reworked to be visually similar to Dragon 2 wraparound panels but in a taller footprint. Renamed to NIV-45.
+  - Static truss panels can now be switched between truss and flat versions for flush attachment options
+- Balance changes:
+  - Concentrator arrays have new cost/mass tier: even more expensive, slightly more massive, best output/area
+  - OKEB-125 panel can now be retracted, power output updated to 150 kw (also retitled OKEB-150 as a result)
+  - K90 'Trio' and K30 'Solo' are now Blanket style arrays from a balance PoV, and are retitled as OKEB-45 and OKEB-15. They can no longer be retracted.
+  - YF-8 Circular Solar Array is now Blanket style from a balance PoV (higher mass efficiency, lower cost, worse output/area), and is retitled as OKEB-4R with 4 kW output
+  - Mass, cost and unlock cost were tuned for many panels
+  - Crash tolerances were normalized by type: Advanced - 8, Blanket - 5, Concentrator - 6, Shrouded - 12.
+  - Shrouded panels now have higher thermal tolerances (2000K) and Blanket panels now have smaller thermal tolerances (1000K). Other panels normalized to 1200K.
+  - Tech location tuned for all parts
+- New panels:
+  - K2-A 1x2 Advanced Photovoltaic Panels: Small Advanced 2 kW array based on MRO panels
+  - K4-A 3x1 Advanced Photovoltaic Panels: Small Advanced 4 kW array based on TDRSS Gen 1 panels
+  - K20-C 1+2+1 Concentrating Photovoltaic Panels: Medium Concentrating 20 KW array based on JUICE panels
+  - K40-AR 'Oar' Advanced Photovoltaic Array: Medium Advanced 40 kW sized retractable array
+  - KX-STAT-2 Advanced Photovoltaic Truss: Single-panel version of the KX-STAT series (2kW)
+  - OKEB-25-R 'Starship' Blanket Photovoltaic Array: Small Blanket 25 kW panels based off the SpaceX Starship panels. Fully shrouded.
+  - OKEB-250 'Ares' Blanket Photovoltaic Array: Huge Blanket 250 kW panels based off NASA DST concept art
+  - IX-A 3x1 Advanced Photovoltaic Panels: Small Advanced 4 kW array based on TDRSS Gen 1 panels
+- Curved solar panels now extend 10x faster in the VAB/SPH
+- Curved solar panels now update their symmetric counterparts when deploying/retracting in the VAB/SPH
+
+v0.8.16
+------
+- Italian translation from fr33soul
+
+v0.8.15
+------
+- German translation from Three_Pounds
+- Fixed missing bulkhead profiles (thanks Streetwind)
+
+v0.8.14
+------
+- KSP 1.6.x
+- Updated MM to 3.1.3
+- License change for code and configs to MIT
+
+v0.8.13
+-------
+- KSP 1.5.1
+- Updated MM to 3.1.0
+- Removed MiniAVC distribution
+
+v0.8.12
+-------
+- KSP 1.4.5
+- Updated bundled MM version
+- Rebuilt project for new version
+- Widened KSP min/max specification
+
+v0.8.11
+-------
+- KSP 1.4.3
+- Switched versioning to mix/max specification
+
+v0.8.10
+-------
+- Fixed .version file issue
+
+v0.8.9
+------
+- KSP 1.4.2 rebuild
+- Updated MiniAVC to 1.2.0.1
+- Fixed sun distance being hardcoded (jsolson)
+
+v0.8.8
+------
+- Fixed scaling of large fixed solar array
+- Adjusted suncatcher location of Trio solar array
+- Reexport of OKEB-75 solar array, might help FAR problem, might not.
+
+v0.8.7
+------
+- KSP 1.3.1
+- Dependency updates
+
+v0.8.6
+------
+- Fixed chinese translation
+- Fixed wrong version of MM
+
+v0.8.5
+------
+- Moved collider hierarchy for OKEB-75 Solar array (fixes collider not detaching)
+- Chinese translation courtesy of forum user DY_ZBX
+
+v0.8.4
+------
+- Fixed a rogue debug logging call
+
+v0.8.3
+------
+- Added Spanish Translation courtesy of forum user fitiales
+
+v0.8.2
+------
+- Fixed specular exponent of T22 1x5 Concentrating Photovoltaic Panels being applied to the whole panel and not just the cells
+- Fixed specular exponent of T14 1x5 Concentrating Photovoltaic Panels being applied to the panel instead of the cells
+- Normalized specular exponent of blanket panels
+- Fixed attach orientation and scaling of PX-STAT 1x2 Photovoltaic Truss
+- Fixed electricity generation of all curved solar panels
+- Fixed mixed up names of NIV-10 and NIV-30 Curved Solar Arrays
+- Fixed typos in a few panel names
+
+v0.8.1
+------
+- Hotfixed a bad panel texture
+
+v0.8.0
+------
+- KSP 1.3
+- Updated MM to 2.8.0
+- Updated MiniAVC to 1.0.3.3
+- Converted all part name/descriptions to localization system
+- Rebalanced solar panel masses and costs for more consistency
+- Removed retractable part search tag from parts that are not retractable
+- Renamed some solar panels to increase consistency and ease of inter-panel comparison
+- Reworked manufacturer names to reduce the number of new manufacturers
+- Adjusted position of suncatcher transforms on SOL-A, NIV-3 and NIV-16 panels
+- K7R 1x4 Concentrating Photovoltaic Panels are no longer retractable
+- Adjusted shaders for many panels to improve looks
+- Added K7R 1x4 Concentrating Photovoltaic Panels and K5R 1x3 Concentrating Photovoltaic Panels, variants of two current panels with added shrouds and retractability
+- Added SOL-B Expanding Curved Solar Array (3.75m to 10m expanding curved solar array)
+- Added OKEB-125 Blanket Solar Array (based on NASA asteroid tug concept)
+- Added OKEB-75 Blanket Solar Array (based on SpaceX ITS solar array concept)
+
+v0.7.3
+------
+- Fixed download link in .version file
+
+v0.7.2
+------
+- Marked for KSP 1.2.2
+- Updated MM to 2.7.5
+- Standardized manufacturer names
+
+v0.7.1
+------
+- Marked for KSP 1.2.1
+- Updated MM to 2.7.4
+
+v0.7.0
+------
+- KSP 1.2
+- Small tweak to plugin code for TweakScale and for 1.2
+- Moved all panels to the new Electrics category
+- Minor tweak to plugin that will help TweakScale work on curved panels if it needs to
+- Updated bundled MM version
+
+v0.6.2
+------
+- KSP 1.1.3
+- Updated bundled MM version
+
+v0.6.1
+------
+- KSP 1.1.2
+- Updated bundled MM version
+- Fixed curved panels not being retractable in the editor
+
+v0.6.0
+------
+- KSP 1.1 rebuild
+- Added part search tags
+
+v0.5.5
+------
+- Fixed deployable curved panels not updating their GUI fields when closed
+- Fixed curved panels not being deployable in the VAB
+- Fixed Toggle field of curved panels being shown (should be action group only)
+
+v0.5.4
+------
+- KSP 1.05 repack
+- Added MiniAVC version checking
+
+v0.5.3
+------
+- Fixed a part name and CTT patch typo
+
+v0.5.2
+------
+- Fixed missing mipmaps for many textures
+- Fixed Megalador's maxTemp being 3100 (now 1200)
+
+v0.5.1
+------
+- CTT 2.0 support
+- Fixed Solo solar array's incorrect model reference
+- Fixed a couple of decriptions to mention retractability of panel
+
+v0.5.0
+------
+- Updated to KSP 1.0
+- Converted all textures to DDS
+- Adjusted solar panel mass/charge rates to better match new stock values
+- Curved solar panels now produce power scaled by the IS law
+- Made several panels unretractable with appropriate mass savings
+- New folder structure and part names for clarity
+- Removed new filter category for curved solar panels
+- Decreased computational resource use for curved solar panels
+
+v0.4.0
+------
+- Updated to KSP version 0.90
+- Curved Solar Panels have a custom category in the Modules part filter
+- Fixed some inconsistent manufacturer names
+
+v0.3.1
+------
+- Added support for the Community Tech Tree
+
+v0.3.0
+------
+- Updated for KSP 0.25
+- Rebalanced research unlock costs for parts
+- Changed many part cfg file names (part names are unchanged)
+- Some fixes to ModuleCurvedSolarPanel courtesy of jgottula
+- Converted all textures to mbm for better memory usage
+
+v0.2.2
+------
+- Fixed an error that would cause non-deploying curved solar panels to spam the log with errors
+- Fixed curved solar panels sapmming the log with debug values
+
+v0.2.1
+------
+- Large rebalance of panel charge rates, masses and costs
+- Fixed an overly large collider on the SOL-A panel causing fluctuating power use
+- Fixed a problem with the attach nodes on the PX-STAT 1x4
+- Updated many panel descriptions
+- Fixed a bug in CurvedSolarPanel (Thanks Maeyanie)
+- Fixed the Solo solar panel's scale being 1.25x too large.
+
+v0.2.0
+------
+- Updated for 0.24
+- Revised costs for panels
+
+v0.1.2
+-------
+- Fixed PX-STAT solar panels having incorrect sun transform direction
+- Changed NIV3 to 3.75m diameter (deprecated old NIV-e)
+- Added NIV-18 Curved solar array
+- Added SOL-A Deployable Curved Solar Array
+- Added YF-1 Circular Solar Array
+- Remodeled and reanimated OKEB-125 and OKEB-250 solar arrays for significantly less lag and improved performance
+- Tweaked several solar panel specular textures
+
+v0.1.1a
+-------
+- Fixed T65 and NIV3 charge rates being incorrect
+
+v0.1.1
+------
+- Added KR-SL Solo Solar Array
+- Added T65 1x5 Concentrating Photovoltaic Panels
+- Added T225 1x5 Concentrating Photovoltaic Panels
+- Added NIV-3 Curved Solar Array
+- Added IX-STAT 1x2 Photovoltaic Truss
+- Added IX-STAT 1x4 Photovoltaic Truss
+- Tweaked some models for performance
+- Another attempted fix for large panel orientation
+
+v0.1.0
+------
+- Split from main Near Future Pack
+- Added KR-ML Trio Solar Array
+- Introduced measures to stop large solar panels from getting stuck (works sometimes...)
