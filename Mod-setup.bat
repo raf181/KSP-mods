@@ -34,7 +34,7 @@ echo.
 echo installing BDArmory_Plus-1.5.7.0
 echo installing PhysicsRangeExtender.1.21_09042021
 echo installing ModuleManager.4.2.2
-xcopy  /s /e /h /i /y "DB armory" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /s /e /h /i /y "BDarmory" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
 :three
