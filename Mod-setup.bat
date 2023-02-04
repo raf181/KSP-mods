@@ -6,6 +6,7 @@ echo Install DB armory [2]
 echo install Moded moduales [3]
 echo Install Nearfuture pack [4]
 echo install Utilities [5]
+echo install OPT [6]
 echo.
 set /p options="How would you like to continue? "
 if '%options%'=='1' goto one
@@ -13,6 +14,7 @@ if '%options%'=='2' goto two
 if '%options%'=='3' goto three
 if '%options%'=='4' goto four
 if '%options%'=='5' goto five
+if '%options%'=='6' goto six
 goto start
 
 :one
@@ -69,6 +71,10 @@ echo installing FullAutoStrut-Release
 echo installing StationPartsExpansionRedux_2_0_10
 echo installing VesselMover.1.12.0._09042021
 xcopy  /s /e /h /i /y "Utility" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+goto start
+
+:six
+xcopy  /s /e /h /i /y "OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
 goto start
