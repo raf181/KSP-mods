@@ -26,7 +26,15 @@ echo installing Parallax_ScatterTextures-2.0.1
 echo installing Parallax_StockTextures-2.0.0
 echo installing Parallax-2.0.6
 echo installing ModuleManager.4.2.2
-xcopy  /s /e /h /i /y "Visual mods\Paralax" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
+set /p one="How would you like to continue (y/n)?  "
+if '%one%'=='Y' goto onecontinue
+if '%one%'=='y' goto onecontinue
+if '%one%'=='N' goto start
+if '%one%'=='n' goto start
+:onecontinue
+xcopy  /v /s /e /h /i /y "Visual mods\Paralax" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
 goto start
 
 :two
@@ -36,7 +44,15 @@ echo.
 echo installing BDArmory_Plus-1.5.7.0
 echo installing PhysicsRangeExtender.1.21_09042021
 echo installing ModuleManager.4.2.2
-xcopy  /s /e /h /i /y "BDarmory" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
+set /p two="How would you like to continue (y/n)?  "
+if '%two%'=='Y' goto twocontinue
+if '%two%'=='y' goto twocontinue
+if '%two%'=='N' goto start
+if '%two%'=='n' goto start
+:twocontinue
+xcopy  /v /s /e /h /i /y "BDarmory" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
 goto start
 
 :three
@@ -45,7 +61,15 @@ echo Moded moduales (It may recuire ModuleManager.4.2.2)
 echo.
 echo installing Kerbal_Planetary_Base_Systems-1.6.16
 echo installing StationPartsExpansionRedux_2_0_10
-xcopy  /s /e /h /i /y "Parts" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
+set /p three="How would you like to continue (y/n)?  "
+if '%three%'=='Y' goto threecontinue
+if '%three%'=='y' goto threecontinue
+if '%three%'=='N' goto start
+if '%three%'=='n' goto start
+:threecontinue
+xcopy  /v /s /e /h /i /y "Parts" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
 goto start
 
 :four
@@ -59,7 +83,15 @@ echo installing NearFutureLaunchVehicles_2_2_0
 echo installing NearFuturePropulsion_1_3_5
 echo installing NearFutureSolar_1_3_2
 echo installing NearFutureSpacecraft_1_4_3
-xcopy  /s /e /h /i /y "Near Future" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
+set /p four="How would you like to continue (y/n)?  "
+if '%fourfive%'=='Y' goto fourcontinue
+if '%fourfive%'=='y' goto fourcontinue
+if '%fourfive%'=='N' goto start
+if '%fourfive%'=='n' goto start
+:fourcontinue
+xcopy  /v /s /e /h /i /y "Near Future" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
 goto start
 
 :five
@@ -70,11 +102,32 @@ echo installing DockingPortAlignmentIndicator-6.10.0.0_20211123125748
 echo installing FullAutoStrut-Release
 echo installing StationPartsExpansionRedux_2_0_10
 echo installing VesselMover.1.12.0._09042021
-xcopy  /s /e /h /i /y "Utility" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
+set /p five="How would you like to continue (y/n)?  "
+if '%five%'=='Y' goto fivecontinue
+if '%five%'=='y' goto fivecontinue
+if '%five%'=='N' goto start
+if '%five%'=='n' goto start
+:fivecontinue
+xcopy  /v /s /e /h /i /y "Utility" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
 goto start
 
 :six
-xcopy  /s /e /h /i /y "OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
+echo Installing Utilityes
+echo.
+echo installing Firespitter
+echo installing OPT
+echo.
+set /p six="How would you like to continue (y/n)?  "
+if '%six%'=='Y' goto sixcontinue
+if '%six%'=='y' goto sixcontinue
+if '%six%'=='N' goto start
+if '%six%'=='n' goto start
+:sixcontinue
+xcopy  /v /s /e /h /i /y "OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
 goto start
 
 goto start
