@@ -39,6 +39,7 @@ echo.
 goto start
 
 :one
+cls
 echo.
 echo installing paralax + dependencies
 echo.
@@ -59,6 +60,7 @@ echo.
 goto start
 
 :two
+cls
 echo.
 echo installing DB armory + dependencies
 echo.
@@ -80,6 +82,7 @@ echo.
 goto start
 
 :three
+cls
 echo.
 echo Moded moduales (It may recuire ModuleManager.4.2.2)
 echo.
@@ -97,6 +100,7 @@ echo.
 goto start
 
 :four
+cls
 echo.
 echo Installing Nearfuture pack
 echo.
@@ -119,6 +123,7 @@ echo.
 goto start
 
 :five
+cls
 echo.
 echo Installing Utilityes
 echo.
@@ -138,6 +143,7 @@ echo.
 goto start
 
 :six
+cls
 echo.
 echo Installing Utilityes
 echo.
@@ -159,7 +165,7 @@ echo.
 echo BDarmory [002]
 echo BDarmory + Paralax [012]
 echo all Parts + Utilities (estable) [3456]
-echo all Parts + Utilities + Paralax (estable) [1346]
+echo all Parts + Utilities + Paralax (estable) [13456]
 echo.
 set /p env="How would you like to continue? "
 if '%env%'=='002' goto one
@@ -169,6 +175,7 @@ if '%env%'=='13456' goto pup
 goto error
 
 :bdp
+cls
 echo.
 echo installing paralax + BDarmory + dependencies
 echo.
@@ -189,6 +196,7 @@ echo.
 goto start
 
 :pu
+cls
 echo.
 echo Installing Nearfuture pack
 echo Installing Utilities
@@ -209,6 +217,7 @@ echo.
 goto start
 
 :pup
+cls
 echo.
 echo installing koprnicus
 echo installing Parallax
