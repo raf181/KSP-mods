@@ -14,6 +14,7 @@ echo.
 echo scenarios [es]
 echo.
 echo show options [op]
+echo.
 :start
 set /p options="How would you like to continue? "
 if '%options%'=='1' goto one
@@ -24,15 +25,18 @@ if '%options%'=='5' goto five
 if '%options%'=='6' goto six
 if '%options%'=='es' goto scenarios
 if '%options%'=='op' goto options
-rem if option does not exit output mesage 
+:error
+cls
 echo.
 color 04
+echo ==========================================
 echo.
-echo the option you chouse does not exist
+echo No valid Imput se all options with [op]
 echo.
+echo ==========================================
 color 07
 echo.
-goto option
+goto start
 
 :one
 echo.
@@ -150,44 +154,81 @@ xcopy  /v /s /e /h /i /y "OPT" "C:\Program Files (x86)\Steam\steamapps\common\Ke
 echo.
 goto start
 
-
 :scenarios
 echo.
 echo BDarmory [002]
 echo BDarmory + Paralax [012]
-echo all Parts + Utilities (estable) [346]
+echo all Parts + Utilities (estable) [3456]
 echo all Parts + Utilities + Paralax (estable) [1346]
 echo.
 set /p env="How would you like to continue? "
 if '%env%'=='002' goto one
 if '%env%'=='012' goto bdp
-if '%env%'=='346' goto one
-if '%env%'=='1346' goto bdp
+if '%env%'=='3456' goto pu
+if '%env%'=='13456' goto pup
+goto error
 
 :bdp
+echo.
 echo installing paralax + BDarmory + dependencies
 echo.
 echo installing koprnicus
-echo installing Parallax_ScatterTextures-2.0.1
-echo installing Parallax_StockTextures-2.0.0
-echo installing Parallax-2.0.6
-echo installing ModuleManager.4.2.2
+echo installing Parallax
+echo installing ModuleManager
+echo installing BDArmory
 echo.
-echo installing BDArmory_Plus-1.5.7.0
-echo installing PhysicsRangeExtender.1.21_09042021
-echo installing ModuleManager.4.2.2
-echo.
+set /p bdp="Would you like to continue (y/n)? "
+if '%bdp%'=='Y' goto bdpcontinue
+if '%bdp%'=='y' goto bdpcontinue
+if '%bdp%'=='N' goto start
+if '%bdp%'=='n' goto start
+:bdpcontinue
 xcopy  /v /s /e /h /i /y "Visual mods\Paralax" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "BDarmory" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 echo.
 goto start
 
-
-rem if option does not exit output mesage 
+:pu
 echo.
-color 04
-echo the option you chouse does not exist
-color 07
+echo Installing Nearfuture pack
+echo Installing Utilities
+echo Installing OPT
+echo Installing Parts
 echo.
+set /p pu="Would you like to continue (y/n)? "
+if '%pu%'=='Y' goto pucontinue
+if '%pu%'=='y' goto pucontinue
+if '%pu%'=='N' goto start
+if '%pu%'=='n' goto start
+:pucontinue
+xcopy  /v /s /e /h /i /y "Near Future" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Utility" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Parts" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
+goto start
 
-goto options
+:pup
+echo.
+echo installing koprnicus
+echo installing Parallax
+echo Installing Nearfuture pack
+echo Installing Utilities
+echo Installing OPT
+echo Installing Parts
+echo.
+set /p pup="Would you like to continue (y/n)? "
+if '%pup%'=='Y' goto pupcontinue
+if '%pup%'=='y' goto pupcontinue
+if '%pup%'=='N' goto start
+if '%pup%'=='n' goto start
+:pupcontinue
+xcopy  /v /s /e /h /i /y "Near Future" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Utility" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Parts" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Visual mods\Paralax" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+echo.
+goto start
+
+goto start
