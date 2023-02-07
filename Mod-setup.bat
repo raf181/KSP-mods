@@ -24,7 +24,15 @@ if '%options%'=='5' goto five
 if '%options%'=='6' goto six
 if '%options%'=='es' goto scenarios
 if '%options%'=='op' goto options
-goto start
+rem if option does not exit output mesage 
+echo.
+color 04
+echo.
+echo the option you chouse does not exist
+echo.
+color 07
+echo.
+goto option
 
 :one
 echo.
@@ -147,10 +155,14 @@ goto start
 echo.
 echo BDarmory [002]
 echo BDarmory + Paralax [012]
+echo all Parts + Utilities (estable) [346]
+echo all Parts + Utilities + Paralax (estable) [1346]
 echo.
 set /p env="How would you like to continue? "
 if '%env%'=='002' goto one
 if '%env%'=='012' goto bdp
+if '%env%'=='346' goto one
+if '%env%'=='1346' goto bdp
 
 :bdp
 echo installing paralax + BDarmory + dependencies
@@ -171,11 +183,11 @@ echo.
 goto start
 
 
-goto options
+rem if option does not exit output mesage 
+echo.
+color 04
+echo the option you chouse does not exist
+color 07
+echo.
 
-echo Install Paralax [1]
-echo Install DB armory [2]
-echo install Moded moduales [3]
-echo Install Nearfuture pack [4]
-echo install Utilities [5]
-echo install OPT [6]
+goto options
