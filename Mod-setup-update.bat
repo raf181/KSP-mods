@@ -97,7 +97,7 @@ echo. go back [back]
 echo.
 set /p Nop="What packs would you like to Install? "
 if '%Nop%'=='N00' goto N000
-if '%Nop%'=='N00' goto N001
+if '%Nop%'=='N00' goto N0012
 if '%Nop%'=='N00' goto N002
 if '%Nop%'=='N00' goto N003
 if '%Nop%'=='N00' goto N004
@@ -129,7 +129,7 @@ xcopy  /v /s /e /h /i /y "Near Future" "C:\Program Files (x86)\Steam\steamapps\c
 :N001
 cls
 echo.
-echo Instaling NearFutureConstruction
+echo Install3ing NearFutureConstruction
 echo.
 set /p N001="Would you like to continue (y/n)? "
 if '%N001%'=='Y' goto N001continue
@@ -140,64 +140,83 @@ if '%N001%'=='n' goto options
 xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureConstruction" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
-:N00
-set /p N00="Would you like to continue (y/n)? "
-if '%N00%'=='Y' goto N00continue
-if '%N00%'=='y' goto N00continue
-if '%N00%'=='N' goto options
-if '%N00%'=='n' goto options
-:N00continue
-xcopy  /v /s /e /h /i /y "Near Future Packs\" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+:N002
+cls
+echo.
+echo Installing NearFutureElectrical
+echo.
+set /p N002="Would you like to continue (y/n)? "
+if '%N002%'=='Y' goto N002continue
+if '%N002%'=='y' goto N002continue
+if '%N002%'=='N' goto options
+if '%N002%'=='n' goto options
+:N002continue
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureElectrical" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
-:N00
-set /p N00="Would you like to continue (y/n)? "
-if '%N00%'=='Y' goto N00continue
-if '%N00%'=='y' goto N00continue
-if '%N00%'=='N' goto options
-if '%N00%'=='n' goto options
-:N00continue
-xcopy  /v /s /e /h /i /y "Near Future Packs\" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+:N003
+echo.
+echo Installing NearFutureExploration
+echo.
+set /p N003="Would you like to continue (y/n)? "
+if '%N003%'=='Y' goto N003continue
+if '%N003%'=='y' goto N003continue
+if '%N003%'=='N' goto options
+if '%N003%'=='n' goto options
+:N003continue
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureExploration" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
-:N00
-set /p N00="Would you like to continue (y/n)? "
-if '%N00%'=='Y' goto N00continue
-if '%N00%'=='y' goto N00continue
-if '%N00%'=='N' goto options
-if '%N00%'=='n' goto options
-:N00continue
-xcopy  /v /s /e /h /i /y "Near Future Packs\" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+:N004
+echo.
+echo installing NearFutureLaunchVehicles
+echo.
+set /p N004="Would you like to continue (y/n)? "
+if '%N004%'=='Y' goto N004continue
+if '%N004%'=='y' goto N004continue
+if '%N004%'=='N' goto options
+if '%N004%'=='n' goto options
+:N004continue
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureLaunchVehicles" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
-:N00
-set /p N00="Would you like to continue (y/n)? "
-if '%N00%'=='Y' goto N00continue
-if '%N00%'=='y' goto N00continue
-if '%N00%'=='N' goto options
-if '%N00%'=='n' goto options
-:N00continue
-xcopy  /v /s /e /h /i /y "Near Future Packs\" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+:N005
+echo.
+echo installing NearFuturePropulsion
+echo.
+set /p N005="Would you like to continue (y/n)? "
+if '%N005%'=='Y' goto N005continue
+if '%N005%'=='y' goto N005continue
+if '%N005%'=='N' goto options
+if '%N005%'=='n' goto options
+:N005continue
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFuturePropulsion" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
-:N00
-set /p N00="Would you like to continue (y/n)? "
-if '%N00%'=='Y' goto N00continue
-if '%N00%'=='y' goto N00continue
-if '%N00%'=='N' goto options
-if '%N00%'=='n' goto options
-:N00continue
-xcopy  /v /s /e /h /i /y "Near Future Packs\" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+:N006
+echo.
+echo installing NearFutureSolar
+echo.
+set /p N006="Would you like to continue (y/n)? "
+if '%N006%'=='Y' goto N006continue
+if '%N006%'=='y' goto N006continue
+if '%N006%'=='N' goto options
+if '%N006%'=='n' goto options
+:N006continue
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureSolar" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
-:N00
-set /p N00="Would you like to continue (y/n)? "
-if '%N00%'=='Y' goto N00continue
-if '%N00%'=='y' goto N00continue
-if '%N00%'=='N' goto options
-if '%N00%'=='n' goto options
-:N00continue
-xcopy  /v /s /e /h /i /y "Near Future Packs\" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+:N007
+echo.
+echo installing NearFutureSpacecraft
+echo.
+set /p N007="Would you like to continue (y/n)? "
+if '%N007%'=='Y' goto N007continue
+if '%N007%'=='y' goto N007continue
+if '%N007%'=='N' goto options
+if '%N007%'=='n' goto options
+:N007continue
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureSpacecraft" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
 goto start
