@@ -235,6 +235,8 @@ echo.
 echo install  KAS [P001]
 echo install Kerbal Planetary Base Systems [P002]
 echo Install Station parts redux [P003]
+echo Install OPT [P004]
+echo Install Rover parts [P005]
 echo.
 echo. go back [back]
 echo.
@@ -243,6 +245,8 @@ if '%part%'=='P000' goto P000
 if '%part%'=='P001' goto P001
 if '%part%'=='P002' goto P002
 if '%part%'=='P003' goto P003
+if '%part%'=='P004' goto P004
+if '%part%'=='P005' goto P005
 if '%part%'=='back' goto Options
 
 :P000
@@ -258,6 +262,8 @@ if '%P000%'=='n' goto options
 xcopy  /v /s /e /h /i /y "Parts\Conection" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Parts\Planetary-base" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Parts\Station-parts" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Parts\OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Parts\Rover" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
 :P001
@@ -297,6 +303,32 @@ if '%P003%'=='N' goto options
 if '%P003%'=='n' goto options
 :P003continue
 xcopy  /v /s /e /h /i /y "Parts\Station-parts" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+goto start
+
+:P004
+echo.
+echo installing OPT
+echo.
+set /p P004="Would you like to continue (y/n)? "
+if '%P004%'=='Y' goto P004continue
+if '%P004%'=='y' goto P004continue
+if '%P004%'=='N' goto options
+if '%P004%'=='n' goto options
+:P004continue
+xcopy  /v /s /e /h /i /y "Parts\OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+goto start
+
+:P005
+echo.
+echo installing Rover Part5
+echo.
+set /p P005="Would you like to continue (y/n)? "
+if '%P005%'=='Y' goto P005continue
+if '%P005%'=='y' goto P005continue
+if '%P005%'=='N' goto options
+if '%P005%'=='n' goto options
+:P005continue
+xcopy  /v /s /e /h /i /y "Parts\Rover" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 goto start
 
 :five
@@ -368,12 +400,19 @@ if '%pu%'=='y' goto pucontinue
 if '%pu%'=='N' goto start
 if '%pu%'=='n' goto start
 :pucontinue
-xcopy  /v /s /e /h /i /y "Near Future" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureConstruction" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureElectrical" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureExploration" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureLaunchVehicles" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFuturePropulsion" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureSolar" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureSpacecraft" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Utility" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
-xcopy  /v /s /e /h /i /y "OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Parts\Conection" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Parts\Planetary-base" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Parts\Station-parts" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Parts\OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Parts\Rover" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 echo.
 goto start
 
@@ -393,12 +432,19 @@ if '%pup%'=='y' goto pupcontinue
 if '%pup%'=='N' goto start
 if '%pup%'=='n' goto start
 :pupcontinue
-xcopy  /v /s /e /h /i /y "Near Future" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureConstruction" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureElectrical" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureExploration" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureLaunchVehicles" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFuturePropulsion" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureSolar" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Near Future Packs\NearFutureSpacecraft" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Utility" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
-xcopy  /v /s /e /h /i /y "OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Parts\Conection" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Parts\Planetary-base" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Parts\Station-parts" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Parts\OPT" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
+xcopy  /v /s /e /h /i /y "Parts\Rover" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 xcopy  /v /s /e /h /i /y "Visual mods\Paralax" "C:\Program Files (x86)\Steam\steamapps\common\Kerbal Space Program\GameData"
 echo.
 goto start
